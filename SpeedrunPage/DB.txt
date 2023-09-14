@@ -1,0 +1,8 @@
+Local, 1, 100.0
+Host, 2, 75
+Zoo, 1, 90
+Benja, 12, 45
+AstaCaptain, 11, 92
+Helpfizer, 10, 28
+JACK4L, 1, 27
+JACK4L, 3, 28
