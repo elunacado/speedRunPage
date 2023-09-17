@@ -77,7 +77,8 @@ int buscarmeEnLeaderboard(const vector<Run>& speedruns, const string& username) 
     int position = 1;
     for (const Run& run : leaderboard) {
         if (run.playerName == username) {
-            return position;
+            cout << "El usuario "<<run.playerName<<" ocupa la(s) posición(es) " << position << endl;
+            //return position;
         }
         position++;
     }
@@ -114,10 +115,11 @@ int main() {
                 cin >> username;
                 userPosition = buscarmeEnLeaderboard(speedruns, username);
                 if (userPosition != -1) {
-                    cout << "Su posición en la leaderboard es: " << userPosition << endl;
-                } else {
+                    cout << userPosition << endl;
+                } 
+                /*else {
                     cout << "No se encontró su nombre de usuario en la leaderboard." << endl;
-                }
+                }*/
                 break;
             case 4:
                 cout << "¡Hasta luego!" << endl;
