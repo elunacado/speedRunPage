@@ -15,21 +15,20 @@ struct Run {
 
 vector<Run> cargarRunsDesdeDB() {
    vector<Run> speedruns;
-    ifstream archivo("DB.txt"); // Abre el archivo para lectura
+    ifstream archivo("DB.txt"); 
 
     if (archivo.is_open()) {
         string linea;
         while (getline(archivo, linea)) {
-            // Parsea cada línea para obtener los datos de la run
             stringstream ss(linea);
             Run run;
-            getline(ss, run.playerName, ','); // Suponiendo que los campos están separados por comas
+            getline(ss, run.playerName, ','); 
             getline(ss, run.percent, ',');
             ss >> run.timeInMinutes;
 
             speedruns.push_back(run);
         }
-        archivo.close(); // Cierra el archivo después de leerlo
+        archivo.close();
     } else {
         cout << "No se pudo abrir el archivo de speedruns." << endl;
     }
@@ -60,7 +59,7 @@ void mostrarLeaderboard(const vector<Run>& speedruns) {
 
     cout << "Leaderboard:" << endl;
     int position = 1;
-    for (const Run& run : leaderboard) {
+    for (const Run& run : leaderboard) { //por cada dato en el leaderboard imprimirlo en el siguiente formato
         cout << position << ". " << run.playerName << " - " << run.percent << "% - " << run.timeInMinutes << " minutos" << endl;
         position++;
     }
@@ -72,7 +71,7 @@ void highPercentLeaderboard(const vector<Run>& speedruns) {
         if (a.percent != b.percent) {
             return a.percent > b.percent; // Ordenar porcentaje de mayor a menor
         } else {
-            return a.timeInMinutes < b.timeInMinutes; // Si el porcentaje es igual, ordenar por tiempo ascendente
+            return a.timeInMinutes < b.timeInMinutes; // Si el porcentaje es igual, ordenar por tiempo
         }
     });
 
@@ -87,7 +86,7 @@ void highPercentLeaderboard(const vector<Run>& speedruns) {
 
 
 int buscarmeEnLeaderboard(const vector<Run>& speedruns, const string& username) {
-    // Ordenar las runs por tiempo (ascendente)
+    // Ordenar las runs por tiempo
     vector<Run> leaderboard = speedruns;
     sort(leaderboard.begin(), leaderboard.end(), [](const Run& a, const Run& b) {
         return a.timeInMinutes < b.timeInMinutes;
@@ -98,12 +97,9 @@ int buscarmeEnLeaderboard(const vector<Run>& speedruns, const string& username) 
     for (const Run& run : leaderboard) {
         if (run.playerName == username) {
             cout << "El usuario "<<run.playerName<<" ocupa la(s) posición(es) " << position << endl;
-            //return position;
         }
         position++;
     }
-
-    // Si el usuario no se encuentra en la leaderboard
     return -1;
 }
 
@@ -137,10 +133,7 @@ int main() {
                 userPosition = buscarmeEnLeaderboard(speedruns, username);
                 if (userPosition != -1) {
                     cout << userPosition << endl;
-                } 
-                /*else {
-                    cout << "No se encontró su nombre de usuario en la leaderboard." << endl;
-                }*/
+                }
                 break;
             case 4:
                 highPercentLeaderboard(speedruns);
