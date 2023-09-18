@@ -79,7 +79,7 @@ void highPercentLeaderboard(const vector<Run>& speedruns) {
     cout << "Leaderboard Highest Percent:" << endl;
     int position = 1;
     for (const Run& run : leaderboard) {
-        cout << position << ". " << run.playerName << " - " << run.percent << " "<< endl;
+        cout << position << ". " << run.playerName << " - " << run.percent << "% "<< endl;
         position++;
     }
 }
