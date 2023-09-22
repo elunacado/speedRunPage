@@ -67,13 +67,13 @@ void mostrarLeaderboard(const vector<Run>& speedruns) {
 
 void highPercentLeaderboard(const vector<Run>& speedruns) {
     vector<Run> leaderboard = speedruns;
-    sort(leaderboard.begin(), leaderboard.end(), [](const Run& a, const Run& b) {
-        if (a.percent != b.percent) {
-            return a.percent > b.percent; // Ordenar porcentaje de mayor a menor
-        } else {
-            return a.timeInMinutes < b.timeInMinutes; // Si el porcentaje es igual, ordenar por tiempo
-        }
-    });
+    sort(leaderboard.begin(), leaderboard.end(), [](const Run& a, const Run& b){
+    if (a.percent != b.percent) {
+        return a.percent > b.percent; // Ordenar porcentaje de mayor a menor
+    } else if (a.timeInMinutes != b.timeInMinutes) {
+        return a.timeInMinutes < b.timeInMinutes; // Si el porcentaje es igual, ordenar por tiempo
+    } 
+});
 
     cout << "Leaderboard Highest Percent:" << endl;
     int position = 1;
@@ -115,7 +115,7 @@ int main() {
         cout << "1. Subir una nueva run" << endl;
         cout << "2. Ver la leaderboard" << endl;
         cout << "3. Ver su puesto mas alto en la leaderboard" << endl;
-        cout << "4. Ver la leaderboard de porcentajes mas altos" << endl;
+        cout << "4. Ver la leaderboard de porcentajes mas altos  -- EN REPARACIONES --" << endl;
         cout << "5. Salir" << endl;
         int opcion;
         cin >> opcion;
@@ -136,7 +136,8 @@ int main() {
                 }
                 break;
             case 4:
-                highPercentLeaderboard(speedruns);
+                cout << "Esta función estuvo presentando problemas por lo que al ser arreglada sera habilitada nuevamente" << endl;
+                //highPercentLeaderboard(speedruns);
                 break;
             case 5:
                 cout << "¡Hasta luego!" << endl;
