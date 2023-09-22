@@ -65,6 +65,7 @@ void mostrarLeaderboard(const vector<Run>& speedruns) {
     }
 }
 
+/*
 void highPercentLeaderboard(const vector<Run>& speedruns) {
     vector<Run> leaderboard = speedruns;
     sort(leaderboard.begin(), leaderboard.end(), [](const Run& a, const Run& b){
@@ -74,7 +75,6 @@ void highPercentLeaderboard(const vector<Run>& speedruns) {
         return a.timeInMinutes < b.timeInMinutes; // Si el porcentaje es igual, ordenar por tiempo
     } 
 });
-
     cout << "Leaderboard Highest Percent:" << endl;
     int position = 1;
     for (const Run& run : leaderboard) {
@@ -82,7 +82,7 @@ void highPercentLeaderboard(const vector<Run>& speedruns) {
         position++;
     }
 }
-
+*/
 
 
 int buscarmeEnLeaderboard(const vector<Run>& speedruns, const string& username) {
