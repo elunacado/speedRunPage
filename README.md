@@ -4,7 +4,7 @@ Este proyecto se basa en la página web Speedrun.com donde el usuario puede regi
 ## SICT0301 Evalúa los componentes
 ###  Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
 
-En el de Mostrar Leaderboard se utiliza el metodo de ordenamiento de Merge Sort, el cual se encarga de ordenar los valores de menor a mayor, por lo tanto, su complejidad es de O(N log(N) ) lo significa que el tiempo de ordenamiento sera de el logaritmo de los datos por el numero de datos (se reducira el numero de ciclos necesarios confome incremente el numero de datos) 
+En el de Mostrar Leaderboard se utiliza el metodo de ordenamiento de Merge Sort, el cual se encarga de ordenar los valores de menor a mayor, por lo tanto, su complejidad es de O(nlog(n)) lo significa que el tiempo de ordenamiento sera de el logaritmo de los datos por el numero de datos (se reducira la complejidad confome incremente el numero de datos) 
 
 Y el de buscarmeEnLeaderboard nos dará una complejidad en el ordenamiento de O(n log(n)) y luego en la búsqueda nos dará una complejidad de O(n) lo que significa que la complejidad aumentará mientras mayor sea el número de datos
 
