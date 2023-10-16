@@ -1,11 +1,108 @@
-Local, 34, 100.0
-Host, 27, 75
-Zoo, 25, 40
-Zoo, 19, 90
-Benja, 72, 45
-AstaCaptain, 41, 92
-Helpfizer, 41, 28
-JACK4L, 17, 27
-JACK4L, 38, 28
-RuLocalHost, 78, 43
-Ethan, 78, 67
+cunning_developer_819,79
+nimbleengineer134,38
+sizzlingpiglet646,48
+merciless_consultant_285,28
+boldsenator567,70
+mastertycoon937,69
+dainty_crab_25,22
+slammerparliamentarian700,81
+kicker_representative_160,92
+captivating.conqueror.342,34
+adventurousspider52,70
+cheerful_snail_522,9
+challenger.chairperson.574,94
+agile.wunderkind.305,60
+fabledtycoon260,61
+dominator.mercenary.151,63
+sleepy_bird_979,36
+agile_wunderkind_641,13
+valorous.architect.246,41
+striking.gladiator.576,51
+bomber_commissioner_370,64
+explosive_magician_151,26
+fierce_whale_522,9
+nimble.pioneer.412,83
+unstoppable.gamer.805,85
+titan.negotiator.323,11
+vivacious.fawn.449,49
+devastator_aficionado_416,43
+playfulhorse467,10
+nimblewarbeast563,53
+playmaker_advocate_579,43
+cyclist_administrator_805,48
+dominatormercenary759,10
+patienthippo65,67
+graceful_shark_634,88
+dynamic.summoner.16,1
+dedicated.guru.809,25
+catcher_delegate_239,81
+sneaky_specter_113,13
+player_official_598,15
+tenacious_congressman_202,75
+striking.gladiator.868,92
+exhilarating.cyber.246,35
+supreme_hacker_481,7
+sneaky_specter_73,10
+fiercephoenix33,16
+fearlessavenger739,1
+fearlessmyth461,6
+jubilant.kitten.270,80
+focusedgovernor600,76
+vibrantgeek78,82
+mighty.reaper.132,47
+unstoppable_gamer_122,14
+powerhouse_orator_531,37
+diver_policymaker_743,21
+cleverelephant807,35
+vivacious.fawn.492,87
+awesome_freak_763,86
+whimsical_panda_cub_734,73
+extraordinary.sentinel.561,66
+ferocious.pharaoh.626,45
+determined.minister.157,18
+radiantfalcon847,44
+volleyercabinet646,86
+pro.bounty.965,22
+extraordinaryblademaster359,76
+playful_cygnet_249,4
+fierce.expert.586,95
+furious_warrior_564,71
+creative.dolphin.148,44
+vibrant_deer_661,64
+furiousprotector429,38
+versatile_guru_127,92
+vibrantheroine651,77
+typhoon.consultant.118,11
+lucky.lizard.758,94
+generous.camel.700,6
+witty_monkey_512,74
+fearless_myth_715,21
+warrior.ace.693,54
+awesomefreak736,61
+fierce.executor.745,78
+ruthless_crimson_879,22
+vibrant_heroine_127,8
+eagerpenguin519,14
+playmaker_advocate_772,95
+enigmaticvanguard497,15
+fiercespecialist149,42
+mighty.sultan.778,58
+dynamicspecialist797,45
+hardworking_wunderkind_156,100
+titan_negotiator_676,58
+royalninja804,15
+mesmerizing_sorcerer_807,70
+fabled.tycoon.811,53
+sensiblepanther652,11
+magical.king.672,68
+samurai_strategist_127,33
+whimsicalpanda_cub963,6
+captivating.conqueror.403,65
+Gonzalo, 45
+Momoa, 36
+Tomas, 32
+Benjamin, 35
+Efrain, 32
+juanPa, 12
+Elf, 90
+Bug, 101
