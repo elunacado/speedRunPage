@@ -12,6 +12,46 @@ struct Run {
     double timeInMinutes;
 };
 
+class Entry{
+public:
+    std::string data;
+    Entry* next;
+
+    Entry(const std::string& value) : data(value), next(nullptr){}
+
+    ~Entry() {
+        delete next;
+    }
+};
+
+
+
+class History{
+public:
+    Entry* head;
+
+    History() : head(nullptr){};
+
+    ~History() { delete head; }
+
+    void addEntry(const std::string& entry){
+        Entry* newEntry = new Entry(entry);
+        newEntry->next = head;
+        head = newEntry;
+    }
+
+    void printHistory(){
+        Entry* current = head;
+        while (current)
+        {
+            std::cout << current->data << endl;
+            current = current->next; 
+        }
+           
+    } 
+
+};
+
 vector<Run> cargarRunsDesdeDB() {
    vector<Run> speedruns;
     ifstream archivo("DB.txt"); 
@@ -34,14 +74,12 @@ vector<Run> cargarRunsDesdeDB() {
     return speedruns;
 }
 
-void agregarRun(vector<Run>& speedruns) {
+void agregarRun(vector<Run>& speedruns, string username, int time) {
     Run nuevaRun;
     std::ofstream file;
     file.open("DB.txt", std::ios_base::app);
-    cout << "Nombre del jugador: ";
-    cin >> nuevaRun.playerName;
-    cout << "Tiempo en minutos: ";
-    cin >> nuevaRun.timeInMinutes;
+    nuevaRun.playerName = username;
+    nuevaRun.timeInMinutes = time;
     speedruns.push_back(nuevaRun);
     file <<nuevaRun.playerName <<", "<<nuevaRun.timeInMinutes<< endl;
     file.close();
@@ -140,22 +178,38 @@ int buscarmeEnLeaderboard(const vector<Run>& speedruns, const string& username) 
 
 
 int main() {
+    History mihistorial;
     vector<Run> speedruns = cargarRunsDesdeDB();
     string username;
+    int time;
     int userPosition = -1;
+    
 
     while (true) {
         cout << "Opciones:" << endl;
         cout << "1. Subir una nueva run" << endl;
         cout << "2. Ver la leaderboard" << endl;
         cout << "3. Ver su puesto mas alto en la leaderboard" << endl;
-        cout << "4. Salir" << endl;
+        cout << "4. Ver el historial de runs subidas" << endl;
+        cout << "5. Salir" << endl;
+
         int opcion;
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-                agregarRun (speedruns);
+                cout << "Nombre del jugador: ";
+                cin >> username;
+                if (username == "") cout << "Ingresa un nombre válido"; break;
+
+                cout << "Tiempo en minutos: ";
+                cin >> time;
+                if (time == 0) { cout << "Ingresa un nombre válido"; break;}   
+
+
+
+                agregarRun(speedruns, username, time);
+                mihistorial.addEntry("Se agrega la run de: " + username);
                 break;
             case 2:
                 mostrarLeaderboard(speedruns);
@@ -169,6 +223,12 @@ int main() {
                 }
                 break;
             case 4:
+                cout << "Historial: " << endl;
+                mihistorial.printHistory();
+                cout << "El juego fue liberado" << endl;
+                break;
+
+            case 5:
                 cout << "¡Hasta luego!" << endl;
                 return 0;
  
