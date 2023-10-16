@@ -9,6 +9,7 @@ En el de Mostrar Leaderboard se utiliza el metodo de ordenamiento de Merge Sort,
 Y el de buscarmeEnLeaderboard nos dará una complejidad en el ordenamiento de O(n log(n)) y luego en la búsqueda nos dará una complejidad de O(n) lo que significa que la complejidad aumentará mientras mayor sea el número de datos
 
 ### Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa
+En la clase History utilizamos listas ligadas para agregar las Runs agregadas por el usuario cuyos cambios se iran agregando al final de la lista con una complejidad de O(1) haciendo que la complejidad siempre sea constante (ademas agregue un par de destructores para un correcto uso de la memoria)
 
 ### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
 
@@ -17,7 +18,7 @@ Y el de buscarmeEnLeaderboard nos dará una complejidad en el ordenamiento de O(
 Utiliza el metodo de ordenamiento de Merge Sort .
 
 ### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
-
+Utilize la lista ligada en la clase historial (opción 4) la cual nos dara una lista ligada con los cambios realizados en esta sesión
 
 ## SICT0303 Implementa acciones directas
 ### Implementa mecanismos para consultar información de las estructuras correctos
@@ -28,3 +29,4 @@ Las runs se registran en una base de datos, las cuales se leen cuando el usuario
 
 ### Implementa mecanismos de escritura de archivos para guardar los datos  de las estructuras de manera correcta
 El programa tiene la opción de agregar runs a la base de datos (DB.txt) con la función de agregar nuevas runs permanentemente.
+El programa tiene la opción de leer la base de datos (DB.txt)
