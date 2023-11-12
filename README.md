@@ -16,16 +16,23 @@ Las funciones que se utilizan son las siguientes
 #### Historial
 
 #### Cargar Runs desde DB
+La complejidad sera de O(n) dadoa que la complejidad depende del numero de elementos que tenga DB.txt.
 
 #### Agregar Runs
+La complejidad sera de O(1) dado a que el acto de insertar se agrega hasta el final por default.
 
 #### Merge Sort
+El Merge Sort posee una complejidad de O(n log n) dado a que el ranbgo en el que se encuentra la respuesta se encuentra es reducido por cada ciclo
 
 #### Mostrar LeaderBoard
+La complejidad sera de O(n) dadoa que la complejidad depende del numero de elementos que tenga DB.txt.
 
 #### buscarmeEnLeaderboard
+La complejidad sera de O(n) dadoa que la complejidad depende de la posicion de nuestro objetivo en la leaderbord ya que la función solo tiene un for.
 
 #### Complejidad Total
+La complejidad del programa se encuentra en O(n) dado a que la mayoria de las funciones para la carga o busqueda de datos se utilizan funciones con esta clase de complejidad.
+
 ## SICT0302 Toma decisiones
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
 Utiliza el metodo de ordenamiento de Merge Sort .
