@@ -12,7 +12,20 @@ Y el de buscarmeEnLeaderboard nos dará una complejidad en el ordenamiento de O(
 En la clase History utilizamos listas ligadas para agregar las Runs agregadas por el usuario cuyos cambios se iran agregando al final de la lista con una complejidad de O(1) haciendo que la complejidad siempre sea constante (ademas agregue un par de destructores para un correcto uso de la memoria)
 
 ### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
+Las funciones que se utilizan son las siguientes
+#### Historial
 
+#### Cargar Runs desde DB
+
+#### Agregar Runs
+
+#### Merge Sort
+
+#### Mostrar LeaderBoard
+
+#### buscarmeEnLeaderboard
+
+#### Complejidad Total
 ## SICT0302 Toma decisiones
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
 Utiliza el metodo de ordenamiento de Merge Sort .
