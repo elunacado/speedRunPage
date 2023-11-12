@@ -90,19 +90,18 @@ void merge(std::vector<Run>& arr, int l, int m, int r) {
     int n1 = m - l + 1;
     int n2 = r - m;
 
-    // Crear subarrays temporales
     std::vector<Run> L(n1), R(n2);
 
-    // Copiar datos a los subarrays temporales L[] y R[]
+    
     for (int i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (int j = 0; j < n2; j++)
         R[j] = arr[m + 1 + j];
 
-    // Combinar los subarrays temporales de nuevo en arr[l..r]
-    int i = 0; // Índice inicial del primer subarray
-    int j = 0; // Índice inicial del segundo subarray
-    int k = l; // Índice inicial del subarray combinado
+    
+    int i = 0; 
+    int j = 0; 
+    int k = l; 
     while (i < n1 && j < n2) {
         if (L[i].timeInMinutes <= R[j].timeInMinutes) {
             arr[k] = L[i];
@@ -114,14 +113,14 @@ void merge(std::vector<Run>& arr, int l, int m, int r) {
         k++;
     }
 
-    // Copiar los elementos restantes de L[], si hay alguno
+    
     while (i < n1) {
         arr[k] = L[i];
         i++;
         k++;
     }
 
-    // Copiar los elementos restantes de R[], si hay alguno
+    
     while (j < n2) {
         arr[k] = R[j];
         j++;
@@ -131,14 +130,14 @@ void merge(std::vector<Run>& arr, int l, int m, int r) {
 
 void merge_sort(std::vector<Run>& arr, int l, int r) {
     if (l < r) {
-        // Encuentra el punto medio del array
+       
         int m = l + (r - l) / 2;
 
-        // Ordena las mitades izquierda y derecha
+        
         merge_sort(arr, l, m);
         merge_sort(arr, m + 1, r);
 
-        // Combina las mitades ordenadas
+     
         merge(arr, l, m, r);
     }
 }
