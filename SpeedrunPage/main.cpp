@@ -199,13 +199,9 @@ int main() {
             case 1:
                 cout << "Nombre del jugador: ";
                 cin >> username;
-                if (username == "") cout << "Ingresa un nombre válido"; break;
-
+                
                 cout << "Tiempo en minutos: ";
                 cin >> time;
-                if (time == 0) { cout << "Ingresa un nombre válido"; break;}   
-
-
 
                 agregarRun(speedruns, username, time);
                 mihistorial.addEntry("Se agrega la run de: " + username);
