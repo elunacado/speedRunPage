@@ -1,4 +1,4 @@
-# Página de SpeedRuns 3.00
+# Página de SpeedRuns 8.00
 Este proyecto se basa en la página web Speedrun.com donde el usuario puede registrar su Run y buscarse en la leaderboard general y ver las leaderboards de mayor porcentaje y la de menor tiempo
 
 ## Correcciones Realizadas
