@@ -2,7 +2,7 @@
 Este proyecto se basa en la página web Speedrun.com donde el usuario puede registrar su Run y buscarse en la leaderboard general y ver las leaderboards de mayor porcentaje y la de menor tiempo
 
 ## Correcciones Realizadas
-Se intercambio la función sort por un Mergbe Sort para realizar el ordenamiento para validar la mitad "Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente." de la competencia "SICT0302 Toma decisiones "
+Se intercambio la función sort por un Merge Sort para realizar el ordenamiento para validar la mitad "Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente." de la competencia "SICT0302 Toma decisiones "
 
 ## SICT0301 Evalúa los componentes
 ###  Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
